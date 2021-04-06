@@ -12,7 +12,9 @@
                     <li class="list-group-item"><b>Nama: </b>{{$Mahasiswa->nama}}</li> 
                     <li class="list-group-item"><b>Kelas: </b>{{$Mahasiswa->kelas}}</li> 
                     <li class="list-group-item"><b>Jurusan: </b>{{$Mahasiswa->jurusan}}</li> 
+                    <li class="list-group-item"><b>E-mail: </b>{{$Mahasiswa->email}}</li> 
                     <li class="list-group-item"><b>No_Handphone: </b>{{$Mahasiswa->no_tlp}}</li> 
+                    <li class="list-group-item"><b>Tgl_Lahir: </b>{{$Mahasiswa->tgl_lahir}}</li> 
                 </ul>
             </div> 
             <a class="btn btn-success mt-3" href="{{ route('mahasiswa.index') }}">Kembali</a> 

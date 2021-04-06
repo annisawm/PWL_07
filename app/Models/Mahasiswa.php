@@ -18,6 +18,8 @@ class Mahasiswa extends Model // Definisi Model
         'nama',
         'kelas',
         'jurusan',
+        'email',
         'no_tlp',
+        'tgl_lahir',
     ];
 }
