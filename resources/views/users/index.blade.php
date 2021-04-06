@@ -9,8 +9,14 @@
             <div class="float-right my-2"> 
                 <a class="btn btn-success" href="{{ route('mahasiswa.create') }}"> Input Mahasiswa</a> 
             </div>
+            <div>
+                <form class="input-group" action="{{ route('mahasiswa.index') }}" method="GET">
+                    <input type="text" class="form-control" name="search" placeholder="Searching By Name">
+                </form>
+            </div>
         </div> 
     </div>
+
     @if ($message = Session::get('success')) 
         <div class="alert alert-success"> 
             <p>{{ $message }}</p> 
