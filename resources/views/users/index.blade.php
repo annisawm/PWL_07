@@ -34,11 +34,11 @@
             <th>Tgl_Lahir</th> 
             <th width="280px">Action</th> 
         </tr>
-        @foreach ($posts as $Mahasiswa) 
+        @foreach ($mahasiswa as $Mahasiswa) 
         <tr> 
             <td>{{ $Mahasiswa->nim }}</td> 
             <td>{{ $Mahasiswa->nama }}</td> 
-            <td>{{ $Mahasiswa->kelas }}</td> 
+            <td>{{ $Mahasiswa->kelas->nama_kelas }}</td> 
             <td>{{ $Mahasiswa->jurusan }}</td> 
             <td>{{ $Mahasiswa->email }}</td> 
             <td>{{ $Mahasiswa->no_tlp }}</td> 
@@ -56,7 +56,7 @@
         </tr> 
         @endforeach 
     </table> 
-    <div class="d-flex float-right">
+    {{-- <div class="d-flex float-right">
         {{$posts->links('pagination::bootstrap-4')}}
-    </div>
+    </div> --}}
     @endsection

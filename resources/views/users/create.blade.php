@@ -28,8 +28,8 @@
                         <input type="text" name="nama" class="form-control" id="Nama" aria-describedby="nama" > 
                     </div>
                     <div class="form-group"> 
-                        <label for="kelas">Kelas</label>
-                        <input type="text" name="kelas" class="form-control" id="Kelas" aria-describedby="kelas" > 
+                        <label for="kelas_id">Kelas</label>
+                        <input type="text" name="kelas_id" class="form-control" id="Kelas" aria-describedby="kelas" > 
                     </div>
                     <div class="form-group"> 
                         <label for="jurusan">Jurusan</label> 
