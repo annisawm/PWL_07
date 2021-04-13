@@ -16,10 +16,14 @@ class Mahasiswa extends Model // Definisi Model
     protected $fillable = [
         'nim',
         'nama',
-        'kelas',
+        'kelas_id',
         'jurusan',
         'email',
         'no_tlp',
         'tgl_lahir',
     ];
+
+    public function kelas(){
+        return $this->belongsTo(Kelas::class);
+    }
 }
