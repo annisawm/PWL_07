@@ -127,7 +127,7 @@ class MahasiswaController extends Controller
             $Mahasiswa -> save();
 
             $kelas = new Kelas;
-            $kelas->id =$request->get('Kelas');
+            $kelas->id =$request->get('kelas');
 
             // fungsi eloquent untuk mengupdate data dengan relasi belongsTo
             $Mahasiswa->kelas()->associate($kelas);
