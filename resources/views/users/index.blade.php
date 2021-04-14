@@ -38,7 +38,7 @@
         <tr> 
             <td>{{ $Mahasiswa->nim }}</td> 
             <td>{{ $Mahasiswa->nama }}</td> 
-            {{-- <td>{{ $Mahasiswa->kelas->nama_kelas }}</td>  --}}
+            <td>{{ $Mahasiswa->kelas->nama_kelas }}</td> 
             <td>{{ $Mahasiswa->jurusan }}</td> 
             <td>{{ $Mahasiswa->email }}</td> 
             <td>{{ $Mahasiswa->no_tlp }}</td> 
@@ -56,7 +56,7 @@
         </tr> 
         @endforeach 
     </table> 
-    {{-- <div class="d-flex float-right">
-        {{$posts->links('pagination::bootstrap-4')}}
-    </div> --}}
+    <div class="d-flex float-right">
+        {{$paginate->links('pagination::bootstrap-4')}}
+    </div>
     @endsection
