@@ -14,7 +14,7 @@ class UpdateMahasiswaSeeder extends Seeder
      */
     public function run()
     {
-        //update data mahasiswa yang ada saat ini milik kelas TI 2D
+        //update data mahasiswa yang ada saat ini milik kelas TI 2A
         DB::table('mahasiswa')->update(['kelas_id' => 1]);
     }
 }
