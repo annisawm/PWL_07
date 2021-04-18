@@ -91,6 +91,10 @@ class MahasiswaController extends Controller
         return view('users.detail', ['Mahasiswa' => $Mahasiswa]);
     }
 
+    public function detailKhs($nim) {
+        $Mahasiswa = Mahasiswa::with('kelas', 'matakuliah')->where('nim', $nim)->first();
+        return view('users.detailKhs', compact('Mahasiswa'));
+    }
 
     public function edit($nim)
     {
