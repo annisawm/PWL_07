@@ -19,7 +19,7 @@ class CreateMahasiswaMatakuliahTable extends Migration
             $table->foreign('mahasiswa_id')->references('nim')->on('mahasiswa'); //menambahkan foreign key di kolom mahasiswa_id
             $table->unsignedBigInteger('matakuliah_id');
             $table->foreign('matakuliah_id')->references('id')->on('matakuliah'); //menambahkan foreign key di kolom matakuliah_id
-            $table->integer('nilai');
+            $table->char('nilai');
             $table->timestamps();
         });
     }
